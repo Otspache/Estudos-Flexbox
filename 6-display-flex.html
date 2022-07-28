@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundametos - align content</title>
+    <style>
+         .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 0;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+                    
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+            border: 2px solid black;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex.end{
+            align-content: flex-end;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align contentTeste align contentTeste align content</div>
+        <div class="item">Teste align contentTeste align content</div>
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align contentTeste align contentTeste align content</div>
+    </div>
+
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align contentTeste align contentTeste align content</div>
+        <div class="item">Teste align contentTeste align content</div>
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align contentTeste align contentTeste align content</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align </div>
+        <div class="item">Teste align contentTeste align content</div>
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align contentTest</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align contentTeste</div>
+        <div class="item">Teste align contentTeste align content</div>
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align contentTeste align contentTeste align content</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste </div>
+        <div class="item">Teste align contentTeste align content</div>
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align contentTeste align contentTeste align content</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align contentTeste align contentTeste align content</div>
+        <div class="item">Teste align contentTeste align content</div>
+        <div class="item">Teste align content</div>
+        <div class="item">Teste align contentTeste align contentTeste align contentTeste align contentTeste align content</div>
+    </div>
+</body>
+</html>
