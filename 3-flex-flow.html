@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos - flex flow</title>
 
@@ -12,6 +11,7 @@
             border: 1px solid black;
             max-width: 500px;
             margin-bottom: 10px;
+            height: 200px;
         }
 
         .default{
@@ -23,7 +23,7 @@
         }
 
         .wrap-reverse{
-            flex-flow: row wrap-reverse;
+            flex-flow: column wrap-reverse;
         }
 
         .r-nowrap{
@@ -35,7 +35,7 @@
         }
 
         .rr-wrap{
-            flex-flow: row-reverse wrap-reverse;
+            flex-flow: column wrap-reverse;
         }
 
         .item{
@@ -47,8 +47,6 @@
             height: 50px;
             line-height: 50px;
         }
-
-
     </style>
 </head>
 <body>
@@ -89,6 +87,7 @@
         <div class="item">4</div>
         <div class="item">5</div>
         <div class="item">6</div>
+        <div class="item">7</div>
     </div>
 
     <h1>row-reverse wrap</h1>
@@ -99,6 +98,7 @@
         <div class="item">4</div>
         <div class="item">5</div>
         <div class="item">6</div>
+        <div class="item">7</div>
     </div>
 
     <h1>row-reverse wrap-reverse</h1>
@@ -109,6 +109,7 @@
         <div class="item">4</div>
         <div class="item">5</div>
         <div class="item">6</div>
+        <div class="item">7</div>
     </div>
 </body>
 </html>

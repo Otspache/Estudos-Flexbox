@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos - flex wrap</title>
-    
+
     <style>
         .flex-container{
             display: flex;
+            flex-direction: column;
             height: 150px;
             border: 2px solid black;
             max-width: 310px;
@@ -19,7 +19,7 @@
             height: 50%;
             text-align: center;
             min-width: 100px;
-            line-height: 60px;
+            line-height: 50px;
         }
 
         .nowrap{
@@ -64,9 +64,9 @@
         <div class="item blue">2</div>
         <div class="item orange">3</div>
         <div class="item orange">4</div>
+    </div>
 
-
-    <h1>wrap-reverse</h1>
+    <h1>wrap reverse</h1>
 
     <div class="flex-container wrap-reverse">
         <div class="item green">1</div>
@@ -74,5 +74,7 @@
         <div class="item orange">3</div>
         <div class="item orange">4</div>
     </div>
+
+
 </body>
 </html>
